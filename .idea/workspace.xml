@@ -4,12 +4,7 @@
     <list default="true" id="e5461d06-bf1b-48ef-9b9f-b77a90e30838" name="变更" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README_en.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pytest_ini/plugin.py" beforeDir="false" afterPath="$PROJECT_DIR$/pytest_ini/plugin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/pytest.ini" beforeDir="false" afterPath="$PROJECT_DIR$/tests/pytest.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_pytest_ini.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_pytest_ini.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

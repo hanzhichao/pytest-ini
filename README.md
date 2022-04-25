@@ -18,7 +18,7 @@ pip install pytest-ini
 ```
 
 ## 提供的Fixutes
-- conf：pytest.ini配置对象，可以使用conf.get(section, option)来获取指定配置段指定变量值
+- ini：ConfigParser配置对象，可以使用ini.get(section, option)来获取指定配置段指定变量值
 - env_vars: 环境变量集合，ChainMap类型，包含当前指定环境的环境变量、配置的全局变量、系统环境变量
 
 ## 提供的参数及配置
@@ -120,5 +120,5 @@ def test_get_options_from_pytest_ini(ini):
     smtp_pwd = ini.get('email', 'smtp_pwd')
     print(smtp_host, smtp_user, smtp_pwd)
 ```
-其他fixture也可以引用`conf`这个fixture来读取pytest.ini中的任意值。
+其他fixture也可以引用`ini`这个fixture来读取pytest.ini中的任意值。
 
