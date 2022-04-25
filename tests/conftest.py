@@ -15,8 +15,8 @@ class EnhancedConfigParser(ConfigParser):
         value = super().get(section, option, *args, **kwargs)
         if '$' in value:
             return Template(value).safe_substitute(value, **os.environ)
-    
-    
+
+
 @pytest.fixture(scope='session')
 def conf(request):
     """
@@ -27,7 +27,7 @@ def conf(request):
     conf = EnhancedConfigParser()
     conf.read(inifile)
     return conf
-    
+
 
 @pytest.fixture(scope='session')
 def env_vars(request, conf):
@@ -36,7 +36,7 @@ def env_vars(request, conf):
     """
     config = request.config
     cur_env = config.getoption('--env') or config.getini('env')
-
+    
     variables = {}
     if conf.has_section('global'):
         variables.update(conf.items('global'))
