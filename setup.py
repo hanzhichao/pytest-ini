@@ -28,7 +28,7 @@ setup(
     packages=find_packages(include=['pytest_ini']),
     setup_requires=setup_requirements,
     url='https://github.com/hanzhichao/pytest-ini',
-    version='0.1',
+    version='0.2',
     zip_safe=True,
     install_requires=[
         'pytest',
