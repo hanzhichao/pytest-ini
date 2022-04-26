@@ -6,10 +6,9 @@ from collections import ChainMap
 
 import pytest
 
-
-# def pytest_addoption(parser):
-#     parser.addoption("--env", action="store", help="choose env: test,beta,prod")
-#     parser.addini('env', help="choose env: test,beta,prod")
+def pytest_addoption(parser):
+    parser.addoption("--env", action="store", help="choose env: test,beta,prod")
+    parser.addini('env', help="choose env: test,beta,prod")
 
 class CaseSensitiveiniigParser(ConfigParser):
     def optionxform(self, optionstr):
