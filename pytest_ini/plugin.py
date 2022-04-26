@@ -1,3 +1,4 @@
+import configparser
 import json
 import os
 from configparser import ConfigParser
@@ -51,7 +52,10 @@ class CaseSensitiveiniigParser(ConfigParser):
         return value
     
     def get(self, section, option, *args, **kwargs):
-        value = super().get(section, option, *args, **kwargs)
+        try:
+            value = super().get(section, option, *args, **kwargs)
+        except (configparser.NoSectionError, configparser.NoOptionError):
+            return None
         return self.ensure_value(value)
 
 
