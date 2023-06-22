@@ -1,6 +1,11 @@
 # pytest-ini
 复用pytest.ini并增加环境配置
 
+![Languate - Python](https://img.shields.io/badge/language-python-blue.svg)
+![PyPI - License](https://img.shields.io/pypi/l/pytest-ini)
+![PyPI](https://img.shields.io/pypi/v/pytest-ini)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/pytest-ini)
+
 ## 特性
 - 支持分环境配置，如[test]、[stage]、[prod]
 - 支持[global]全局变量配置
