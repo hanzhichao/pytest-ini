@@ -24,7 +24,6 @@ setup(
         'Framework :: Pytest',
         'Programming Language :: Python',
         'Topic :: Software Development :: Testing',
-        'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3.7',
     ],
     license="MIT license",
@@ -36,7 +35,7 @@ setup(
     packages=find_packages(include=['pytest_ini']),
     setup_requires=setup_requirements,
     url='https://github.com/hanzhichao/pytest-ini',
-    version='0.33',
+    version='0.34',
     zip_safe=True,
     install_requires=[
         'pytest',
